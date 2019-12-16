@@ -1,0 +1,795 @@
+
+* {
+ 	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "FuturaPT-Bold";
+	src: url(../font/FuturaPT-Bold.woff2) format("woff2");
+	src: url(../font/FuturaPT-Bold.woff) format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "FuturaPT-Book";
+	src: url(../font/FuturaPT-Book.woff2) format("woff2");
+	src: url(../font/FuturaPT-Book.woff) format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "FuturaPT-Demi";
+	src: url(../font/FuturaPT-Demi.woff2) format("woff2");
+	src: url(../font/FuturaPT-Demi.woff) format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "FuturaPT-Heavy";
+	src: url(../font/FuturaPT-Heavy.woff2) format("woff2");
+	src: url(../font/FuturaPT-Heavy.woff) format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "FuturaPT-Medium";
+	src: url(../font/FuturaPT-Medium.woff2) format("woff2");
+	src: url(../font/FuturaPT-Medium.woff) format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "antipastoicons.woff";
+	src: url(../font/antipastoicons-demibold-webfont.woff2) format("woff2");
+	src: url(../font/antipastoicons-demibold-webfont.woff) format("woff");
+	font-display: swap;
+}
+
+body {
+	width: 100%;
+	font-family: "FuturaPT-Book";
+	background: #F2F2F2;
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.underscore {
+	border-bottom: 1px solid #4D4D4D;
+}
+
+header {
+	background: #FFF;
+}
+
+header .wrap {
+	display: flex;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: "FuturaPT-Bold";
+	font-size: 53px;
+	color: #fff;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+.logo {
+    display: block;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+
+.hrimg {
+	width: 200px;
+	height: 50px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+.facebook {
+	width: 24px;
+	height: 24px;
+    background: url("../img/fb.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.facebook:hover {
+	width: 24px;
+	height: 24px;
+    background: url("../img/fb1.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.vk {
+	width: 24px;
+	height: 24px;
+    background: url("../img/vk.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.vk:hover {
+	width: 24px;
+	height: 24px;
+    background: url("../img/vk1.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.twitter {
+	width: 24px;
+	height: 24px;
+    background: url("../img/tw.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.twitter:hover {
+	width: 24px;
+	height: 24px;
+    background: url("../img/tw1.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.youtube {
+	width: 58px;
+	height: 25px;
+    background: url("../img/yt.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.youtube:hover {
+	width: 58px;
+	height: 25px;
+    background: url("../img/yt1.svg") no-repeat center center;
+    background-size: cover;
+}
+
+.gradient {
+    background: linear-gradient(180deg, rgba(198,198,198,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.menu {
+	margin: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+}
+
+.block-menu__img {
+	width: 24px;
+	height: 24px;
+}
+
+.language {
+	display: flex;
+	align-items: center;
+	font-family: "FuturaPT-Medium";
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #666;
+}
+
+.img-check {
+	width: 6px;
+	height: 6px;
+}
+
+.menu__item {
+	font-family: "FuturaPT-Medium";
+	font-size: 16px;
+	color: #333;
+}
+
+.menu__item:hover {
+    color: #91D538;
+}
+
+.naw {
+	color: #91D538;
+}
+
+.what-is-chrysotile {
+    position: relative;
+    width: 100%;
+    height: 73vh;
+}
+
+.bottom-block {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+
+}
+.what-is-chrysotile__title {
+	width: 750px;
+	height: 450px;
+    background: url("../img/bg.png") no-repeat center center;
+    background-size: cover;
+}
+
+.what-is-chrysotile__temperature {
+	width: 450px;
+}
+
+.more {
+	font-family: "FuturaPT-Medium";
+	color: #fff;
+	background: #75CB06;
+}
+
+.slider-more {
+	text-align: right;
+	line-height: 22px;
+	display: block;
+	margin-top: 30px;
+	padding-right: 11px;
+	background: url(../img/more1.svg) no-repeat center center;
+    width: 110px;
+    height: 38px;
+}
+
+.temperature__more {
+	position: absolute;
+	right: 0;
+	text-align: center;
+	background: url(../img/more2.svg) no-repeat center center;
+	display: block;
+	width: 85px;
+    height: 37px;
+    flex: none;
+    margin-top: 30px;
+}
+
+.temperature__img {
+	display: flex;
+	margin: 30px 0 0 40px;
+}
+
+.title__text {
+	display: block;
+	padding-right: 11px;
+	margin-left: 30px;
+	margin-top: 0;
+}
+
+.thermometer {
+	width: 70px;
+	height: 110px;
+}
+
+.temperature__text {
+	font-family: "FuturaPT-Demi";
+	font-size: 40px;
+	margin: 0 0 0 15px;
+	line-height: 37px;
+}
+
+.temperature__numbers {
+	font-family: "FuturaPT-Heavy";
+	font-size: 66px;
+	margin: 30px 0 0 30px;
+	letter-spacing: -0.04em;
+}
+
+.plato {
+   position: absolute;
+   z-index: 1;
+   bottom: 59px;
+   right: 0;
+   width: 495px;
+   height: 145px;
+}
+
+.plato__quote {
+	font-family: "FuturaPT-Medium";
+	font-size: 20px;
+	background-color: #fff;
+	padding: 36px 163px 30px 23px;
+}
+
+.plato__name {
+	font-family: "FuturaPT-Medium";
+	font-size: 12px;
+	color: #75CB06;
+}
+
+.plato__author {
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	right: 25px;
+	top: -7px;
+}
+
+.author__img {
+	width: 125px;
+	height: 125px;
+}
+
+.scientific-research__headline {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.line {
+	width: 14px;
+	height: 6px;
+    margin: 25px;
+}
+
+.headline {
+	font-family: "FuturaPT-Demi";
+	font-size: 28px;
+	color: #83D01F;
+}
+
+.sciens {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #4D4D4D;
+}
+
+.sciens__size {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.arrow-l {
+	display: block;
+	background: url("../img/arrow-l.svg") no-repeat center center;
+	width: 22px;
+	height: 35px;
+	margin: auto 0 auto 0;
+}
+
+.arrow-r {
+	display: block;
+	background: url("../img/arrow-r.svg")  no-repeat center center;
+	width: 22px;
+	height: 35px;
+	margin: auto 0 auto 0;
+}
+
+.sciens__block {
+	display: block;
+	width: 252px;
+	text-align: center;
+	margin: 0 10px;
+}
+
+.material {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.material__text {
+	font-family: "FuturaPT-Heavy";
+	font-size: 60px;
+	margin: 30px 0 30px 0;
+}
+
+.material__arrow {
+	background: url(../img/arrow-r.svg) no-repeat center center;
+	width: 22px;
+	height: 35px;
+	display: block;
+	margin: 0 30px;
+}
+
+.scientific-research__subtitle {
+	font-family: "FuturaPT-Heavy";
+	font-size: 16px;
+}
+.scientific-research__text {
+	font-family: "FuturaPT-Book";
+	font-size: 17px;
+}
+.clip {
+	font-family: "antipastoicons.woff";
+	color: #75CB06;
+	font-size: 17px;
+}
+
+.news__headline {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news__img {
+	width: 305px;
+	height: 223px;
+}
+
+.news-blocks {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.news__block {
+	display: block;
+	width: 305px;
+}
+
+.news__subtitle {
+	font-family: "FuturaPT-Heavy";
+	font-size: 27px;
+}
+.news__text {
+	font-family: "FuturaPT-Book";
+	font-size: 19px;
+}
+
+.news__more {
+	background: url(../img/news.svg) no-repeat center center;
+  	width: 106px;
+	height: 23px;
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+.read {
+	display: block;
+	border: 1px solid #75CB06;
+	border-radius: 5px;
+    width: 116px;
+	height: 27px;
+	display: flex;
+	margin: 40px auto 50px auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.read-more {
+	display: block;
+	text-align: center;
+}
+
+.what__headline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px;
+	text-align: center;
+}
+
+.what__hriz{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.what__list {
+	width: 284px;
+}
+
+.hriz-img {
+	width: 192px;
+	height: 192px;
+	display: block;
+	margin: 10px;
+}
+
+.parameters {
+	font-family: "FuturaPT-Demi";
+	font-size: 15px;
+	color: #75CB06;
+}
+.list {
+	font-family: "FuturaPT-Book";
+	font-size: 15px;
+	margin-left: 19px;
+	padding: 0;
+}
+.list__numbers {
+	font-family: "FuturaPT-Demi";
+	font-size: 15px;
+}
+
+.what__texts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 23px 0 27px 0;
+} 
+
+.what__text1 {
+	text-align: center;
+}
+
+.what__text2 {
+	text-align: center;
+}
+
+.text {
+	font-family: "FuturaPT-Book";
+	font-size: 19px;
+}
+.text__formula {
+	font-family: "FuturaPT-Bold";
+	font-size: 19px;
+}
+
+.hrefs {
+	display: flex;
+	justify-content: space-around;
+	margin: 30px auto 30px auto;
+	align-items: center;
+}
+
+.hrefs__block {
+	display: block;
+}
+
+.sity {
+	width: 126px;
+	height: 53px;
+	background: url("../img/sity2.png") no-repeat center center;
+	background-size: cover;
+}
+
+.live {
+	width: 204px;
+	height: 44px;
+	background: url("../img/live2.png") no-repeat center center;
+	background-size: cover;
+}
+
+.ban {
+	width: 96px;
+	height: 64px;
+	background: url("../img/ban2.png") no-repeat center center;
+	background-size: cover;
+}
+
+.shifer {
+	width: 44px;
+	height: 51px;
+	background: url("../img/shifer2.png") no-repeat center center;
+	background-size: cover;
+}
+
+.super {
+	width: 57px;
+	height: 54px;
+	background: url("../img/super2.png") no-repeat center center;
+	background-size: cover;
+}
+
+.foot {
+	background: #333;
+	display: flex;
+	padding: 35px 0 166px 37px
+}
+
+.address {
+	margin: 0 158px 0 70px;
+}
+.reference {
+	font-family: "FuturaPT-Demi";
+	font-size: 14px;
+	color: #fff;
+	background: #333;
+}
+
+.source {
+    font-family: "FuturaPT-Book";
+	font-size: 14px;
+	color: #fff;
+	background: #333;
+}
+
+.none {
+	display: none;
+	position: absolute;
+	top: 67px;;
+	right: 32px;
+	width: 1085px;
+	background: #fff;
+	z-index: 4;
+}
+
+.none__blocks{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+	flex-wrap: wrap;
+}
+
+.none__block {
+	width: 210px;
+	margin: 5px 20px;
+}
+
+.none__book {
+	font-family: "FuturaPT-Book";
+	font-size: 15px;
+	margin: 9px 0;
+	padding: 0;
+	display: block;
+}
+.none__medium {
+	font-family: "FuturaPT-Medium";
+	font-size: 18px;
+	margin: 12px 0;
+	display: block;
+}
+
+@media only screen and (max-width:768px) {
+	h1 {
+		font-size: 37px;
+	}
+
+	.hrefs {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.foot {
+		flex-direction: column;
+		padding: 35px 0 26px 63px;
+	}
+
+	.hrefs a, .news__block {
+		margin: 10px;
+	}
+
+	.what__texts {
+		margin: 23px 10px 27px 10px;
+	}
+
+	.what__hriz {
+		flex-direction: column;
+	}
+
+	.news-blocks {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.address {
+		margin: 0;
+	}
+
+	.brauz {
+		display: none;
+	}
+
+	.line {
+		margin: 14px;
+	}
+
+	.material__text {
+		font-size: 20px;
+	}
+
+	.bottom-block {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.what-is-chrysotile {
+		height: auto;
+	}
+
+	.what-is-chrysotile__title {
+		width: 100%;
+		background: url(../img/bg2.svg) no-repeat center center;
+		background-size: cover;
+		height: 30vh;
+	}
+
+	.what-is-chrysotile__temperature {
+		width: 100%;
+		max-width: 415px;
+	}
+
+	.temperature__more {
+		display: none;
+	}
+
+	.temperature__img {
+		margin: 30px 0 0 15px;
+	}
+
+	.temperature__numbers {
+		font-size: 55px;
+   		margin: 15px 0 0 30px;
+	}
+
+	.bottom-block {
+		position: static;
+	}
+
+	.plato {
+		position: relative;
+		width: 340px; 
+		height: auto;
+		bottom: 0;
+	}
+
+	.plato__quote {
+		font-size: 14px;
+		padding: 22px 107px 10px 10px;
+	}
+
+	.plato__author {
+		right: 10px;
+		top: -10px;
+	}
+
+	.author__img {
+		width: 90px;
+    	height: 90px;
+	}
+
+	.plato__name {
+		margin: 0;
+	}
+
+	.gradient {
+		display: none;
+	}
+
+	.info form {
+		display: none;
+	}
+
+	.facebook, .vk, .twitter, .youtube {
+		display: none;
+	}
+
+	.language { 
+		font-size: 16px;
+	}
+
+	.none {
+		width: 100%;
+		top: 0;
+		right: 0;
+	}
+
+	.none__blocks {
+		flex-direction: column;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	.ipad {
+		display: none;
+	}
+
+
+}
