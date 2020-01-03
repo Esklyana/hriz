@@ -5,6 +5,11 @@
 	<title>Что такое хризотил</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="./img/favicon.png">
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./js/slick.js"></script>
+	<script type="text/javascript" src="./js/jquery.singlePageNav.min.js"></script>
+	<script src="./js/script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
 </head>
 <body>
@@ -27,7 +32,7 @@
 				    <a href="" class="vk"></a>
 				    <a href="" class="twitter"></a>
 				    <a href="" class="youtube"></a>
-				    <img src="./img/menu.svg" class="block-menu__img">
+				    <a class="block-menu__img"></a>
 				</div>
 			</div>
 		</div>
@@ -44,7 +49,7 @@
 			</div>
 	</header>
 	</div>
-		<div class="none">
+		<div class="menu-none">
 			<div class="none__blocks">
 				<div class="none__block">
 					<a href="" class="none__medium">Об Ассоциации</a>
@@ -135,7 +140,7 @@
 		</div>
 		<div class="material">
 			<p class="material__text">Материал с уникальными свойствами</p>
-			<a href="" class="material__arrow"></a>
+			<a class="material__arrow"></a>
 		</div>
 	</div>
 	<div class="underscore"></div>
@@ -145,27 +150,42 @@
 	    	<img src="./img/line2.svg" class="line">
 	    </div>
 	    <div class="sciens">
-		    <a href="" class="arrow-l"></a>
-		        <div class="sciens__size">
-			    	<a href="" class="sciens__block">
-			    		<p class="scientific-research__subtitle">ГАРАНТИРОВАННО БЕЗВРЕДЕН ПРИ КОНТРОЛИРУЕМОМ ИСПОЛЬЗОВАНИИ</p>
-				    		<p class="scientific-research__text"><span class="clip">A </span>О результатах исследований по определению степени токсичности асбестопородных отходов, складируемых в отвалы.</p>
-			    		<p class="scientific-research__text">Москва, НИИ медицины труда РАМН РФ, 1995.</p>
-			    	</a>
-			    	<a href="" class="sciens__block ipad">
-			    		<p class="scientific-research__subtitle">ИСПАНСКИЕ УЧЕНЫЕ ПРОВЕРИЛИ АСБЕСТ</p>
-				    		<p class="scientific-research__text"><span class="clip">A </span>Определение класса токсичности вскрышных пород и отходов обогащения, складируемых в отвалы при разработке Баженовского месторождения хризотил-асбеста.</p>
-			    		<p class="scientific-research__text">Екатеринбург, Ассоциация «Экология и медицина», 1995.</p>
-			    	</a>
-			    	<a href="" class="sciens__block brauz">
-			    		<p class="scientific-research__subtitle">ОБ ИСПОЛЬЗОВАНИИ ХРИЗОТИЛ-АСБЕСТА В СТРОИТЕЛЬСТВЕ</p>
-			    		<div>
-				    		<p class="scientific-research__text"><span class="clip">A </span>Критический обзор вопроса о допустимости использования асбеста.</p>
-				    	</div>
-			    		<p class="scientific-research__text">Екатеринбург, Екатеринбургский МНЦ, 1997.</p>
-			    	</a>
-				</div>
-	    	<a href="" class="arrow-r"></a>
+	        <div class="sciens__size">
+		    	<a href="" class="sciens__block">
+		    		<p class="scientific-research__subtitle">ГАРАНТИРОВАННО БЕЗВРЕДЕН ПРИ КОНТРОЛИРУЕМОМ ИСПОЛЬЗОВАНИИ</p>
+			    		<p class="scientific-research__text"><span class="clip">A </span>О результатах исследований по определению степени токсичности асбестопородных отходов, складируемых в отвалы.</p>
+		    		<p class="scientific-research__text">Москва, НИИ медицины труда РАМН РФ, 1995.</p>
+		    	</a>
+		    	<a href="" class="sciens__block">
+		    		<p class="scientific-research__subtitle">ИСПАНСКИЕ УЧЕНЫЕ ПРОВЕРИЛИ АСБЕСТ</p>
+			    		<p class="scientific-research__text"><span class="clip">A </span>Определение класса токсичности вскрышных пород и отходов обогащения, складируемых в отвалы при разработке Баженовского месторождения хризотил-асбеста.</p>
+		    		<p class="scientific-research__text">Екатеринбург, Ассоциация «Экология и медицина», 1995.</p>
+		    	</a>
+		    	<a href="" class="sciens__block">
+		    		<p class="scientific-research__subtitle">ОБ ИСПОЛЬЗОВАНИИ ХРИЗОТИЛ-АСБЕСТА В СТРОИТЕЛЬСТВЕ</p>
+		    		<div>
+			    		<p class="scientific-research__text"><span class="clip">A </span>Критический обзор вопроса о допустимости использования асбеста.</p>
+			    	</div>
+		    		<p class="scientific-research__text">Екатеринбург, Екатеринбургский МНЦ, 1997.</p>
+		    	</a>
+		    	<a href="" class="sciens__block">
+		    		<p class="scientific-research__subtitle">ГАРАНТИРОВАННО БЕЗВРЕДЕН ПРИ КОНТРОЛИРУЕМОМ ИСПОЛЬЗОВАНИИ</p>
+			    		<p class="scientific-research__text"><span class="clip">A </span>О результатах исследований по определению степени токсичности асбестопородных отходов, складируемых в отвалы.</p>
+		    		<p class="scientific-research__text">Москва, НИИ медицины труда РАМН РФ, 1995.</p>
+		    	</a>
+		    	<a href="" class="sciens__block">
+		    		<p class="scientific-research__subtitle">ИСПАНСКИЕ УЧЕНЫЕ ПРОВЕРИЛИ АСБЕСТ</p>
+			    		<p class="scientific-research__text"><span class="clip">A </span>Определение класса токсичности вскрышных пород и отходов обогащения, складируемых в отвалы при разработке Баженовского месторождения хризотил-асбеста.</p>
+		    		<p class="scientific-research__text">Екатеринбург, Ассоциация «Экология и медицина», 1995.</p>
+		    	</a>
+		    	<a href="" class="sciens__block">
+		    		<p class="scientific-research__subtitle">ОБ ИСПОЛЬЗОВАНИИ ХРИЗОТИЛ-АСБЕСТА В СТРОИТЕЛЬСТВЕ</p>
+		    		<div>
+			    		<p class="scientific-research__text"><span class="clip">A </span>Критический обзор вопроса о допустимости использования асбеста.</p>
+			    	</div>
+		    		<p class="scientific-research__text">Екатеринбург, Екатеринбургский МНЦ, 1997.</p>
+		    	</a>
+			</div>
 	    </div>
 	<div class="wrap">
 	    <div class="news__headline">
